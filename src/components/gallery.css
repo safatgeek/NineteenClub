@@ -1,0 +1,73 @@
+.gallery{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery>:nth-child(1){
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #472D2D;
+    font-family: fantasy;
+}
+
+
+.gallery>:nth-child(2){
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #002B5B;
+    font-family: fantasy;
+}
+
+.slider{
+    margin: 5rem auto;
+    height: 24rem;
+    width: 42rem;
+    background-image: url(../img/jzsMorning.jpeg);
+    background-size: cover;
+    animation: slide 40s infinite;
+
+}
+
+
+@keyframes slide{
+
+    25%{
+        background-image: url(../img/girlsScl1.jpg);
+    }
+
+    44%{
+        background-image: url(../img/jzsDay.jpg);
+    }
+    63%{
+        background-image: url(../img/hSchool.jpg);
+    }
+    82%{
+        background-image: url(../img/Bangabandhu.jpg);
+    }
+    100%{
+        background-image: url(../img/sahjamal.jpg);
+    }
+}
+
+@media screen and (max-width: 820px){
+    .gallery{
+        margin-top: 2.5rem;
+    }
+
+    .gallery>:nth-child(1){
+        font-size: 2rem;
+    }
+
+    .gallery>:nth-child(2){
+        font-size: 2rem;
+    }
+
+    .slider{
+        margin: 3rem auto;
+        height: 12rem;
+        width: 21em;
+    }
+}
